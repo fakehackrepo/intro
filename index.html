@@ -13,13 +13,13 @@
     if (Hls.isSupported()) {
       var video = document.getElementById('video');
       var hls = new Hls();
-      hls.loadSource('intro/archivo.m3u8'); // Cambia por el nombre de tu archivo
+      hls.loadSource('LA_CHOCOLATADA_DE_SIDERAL_-_Mr_Blue_Sky.m3u8'); // Cambia por el nombre de tu archivo
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, function () {
         video.play();
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = 'intro/archivo.m3u8'; // Cambia por el nombre de tu archivo
+      video.src = 'LA_CHOCOLATADA_DE_SIDERAL_-_Mr_Blue_Sky.m3u8'; // Cambia por el nombre de tu archivo
       video.addEventListener('loadedmetadata', function () {
         video.play();
       });
